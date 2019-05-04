@@ -1,8 +1,9 @@
 import { app } from 'click-cli';
 
+
 new app('Typer',
 {
-	view: (`<span >{view}</span>`),
+	view: (`<span >{view}<span>{endsymbol}</span></span>`),
 	state:
 	{
 		loopNum: 0,
@@ -10,7 +11,8 @@ new app('Typer',
 		erasespeed: 100,
 		typespeed: 100,
 		i: 0,
-		view: ''
+		view: '',
+		endsymbol:'|'
 	},
 	fn:
 	{
