@@ -6,7 +6,8 @@ new app('Typer',{
     state:{
         loopNum :0,
         text:[],
-        interval:2000,
+        erasespeed:100,
+        typespeed:100,
         i:0,
         view:''
     },
@@ -21,7 +22,7 @@ new app('Typer',{
              that.i++;
               setTimeout(function(){
                 self.start(that)
-              },100);
+              },that.typespeed);
         }else{
             var a = Number(that.loopNum),
                 c = that.text.length;
@@ -49,7 +50,7 @@ new app('Typer',{
                   clearInterval(Inte);
                   callback !== undefined && callback();
                 }
-            },100)
+            },that.erasespeed)
           } 
       }
     },
@@ -57,9 +58,6 @@ new app('Typer',{
     auto:{
         text:function(a) {
             return(a.split('|'));
-        },
-        interval:function(a) {
-            return parseInt(a, 10) || 2000;
         }
     }
 });
