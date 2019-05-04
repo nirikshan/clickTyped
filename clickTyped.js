@@ -1,8 +1,5 @@
-import
-{
-	app
-}
-from 'click-cli';
+import { app } from 'click-cli';
+
 new app('Typer',
 {
 	view: (`<span >{view}</span>`),
