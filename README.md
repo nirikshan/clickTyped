@@ -19,6 +19,9 @@
    text        : This prop takes multiple strings seperated by *|* sign.
      
    erasespeed  : This prop takes typed text erasing speed on micro seconds. It's default value is 1 seconds (1000ms).
+   
+   endsymbol   : This prop takes symbol that should be at the end of animated text . It's default symbol is *|*
+
     
 ## Usage :
  
