@@ -1,7 +1,7 @@
 # clickTyper
 
 
- clickTyper is click.js based Component which provide animated automatice typing effect for click.js based application.
+ clickTyper is click.js based Component which provide animated automatic typing effect for click.js based application.
  This component dosn't use any external package , services or shared global states.
  
  ## Component :
