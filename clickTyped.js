@@ -3,17 +3,18 @@ import { app } from 'click-cli';
 
 new app('Typer',
 {
-	view: (`<span >{view}<span>{endsymbol}</span></span>`),
+	view: (`<span>{view}{endsymbol}</span>`),
 	state:
 	{
 		loopNum: 0,
 		text: [],
-		erasespeed: 100,
-		typespeed: 100,
+		erasespeed: 1000,
+		typespeed: 1000,
 		i: 0,
 		view: '',
 		endsymbol:'|'
 	},
+	props:['text','typespeed','erasespeed','endsymbol'],
 	fn:
 	{
 		start: function(that)
